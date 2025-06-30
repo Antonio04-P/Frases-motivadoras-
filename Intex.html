@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Frase Motivadora</title>
+  <style>
+    body { 
+      font-family: sans-serif; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+    }
+    .quote {
+      font-size: 1.5rem;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote" id="quote"></div>
+
+  <script>
+    const frases = [
+      "Cree en ti y todo será posible.",
+      "Cada día es una nueva oportunidad.",
+      "No te detengas hasta estar orgulloso.",
+      "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+      "Tú puedes más de lo que imaginas."
+    ];
+
+    const random = Math.floor(Math.random() * frases.length);
+    document.getElementById('quote').textContent = frases[random];
+  </script>
+</body>
+</html>
