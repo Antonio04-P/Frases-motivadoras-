@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frase para tu día</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #83a4d4, #b6fbff);
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 600px;
+    }
+    .quote {
+      font-size: 1.5rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="quote" id="quote">Cargando frase...</div>
+  </div>
+
+  <script>
+    const frases = [
+      "Cree en ti y todo será posible.",
+      "Hazlo con pasión o no lo hagas.",
+      "Cada día es una nueva oportunidad.",
+      "No te detengas hasta estar orgulloso.",
+      "Tú puedes más de lo que imaginas.",
+      "El éxito no llega solo, se construye paso a paso.",
+      "No importa cuán lento vayas, lo importante es no detenerse.",
+      "Todo logro comienza con la decisión de intentarlo.",
+      "Tu actitud determina tu dirección.",
+      "La constancia vence al talento cuando el talento no se esfuerza.",
+      "Hoy es un buen día para comenzar.",
+      "Cambia tus pensamientos y cambiarás tu mundo.",
+      "Nada es imposible para una mente decidida.",
+      "El esfuerzo de hoy es el éxito de mañana.",
+      "Confía en el proceso.",
+      "No renuncies. A veces las últimas llaves abren la puerta.",
+      "Sigue adelante, incluso si es lento.",
+      "Sé fuerte, valiente y constante.",
+      "El único fracaso es no intentarlo.",
+      "Tus sueños no tienen fecha de caducidad.",
+      "El camino más difícil lleva a los destinos más hermosos.",
+      "Tú defines tu valor, no los demás.",
+      "La disciplina es el puente entre metas y logros.",
+      "Rodéate de personas que saquen lo mejor de ti.",
+      "La motivación te inicia, el hábito te mantiene.",
+      "Hazlo por ti, no por otros.",
+      "Cada día tienes una nueva oportunidad.",
+      "Lo que hoy parece difícil, mañana será tu orgullo.",
+      "Si no lo intentas, nunca lo sabrás.",
+      "Sigue caminando aunque el camino sea incierto.",
+      "Sé tú mismo, los demás ya están ocupados.",
+      "La vida comienza al final de tu zona de confort.",
+      "Atrévete a ser grande.",
+      "La perseverancia siempre da frutos.",
+      "No busques excusas, busca resultados.",
+      "El éxito es la suma de pequeños esfuerzos.",
+      "Hoy puede ser el día que cambie tu vida.",
+      "Cree en tu magia.",
+      "Tú tienes el poder de cambiar tu historia.",
+      "Haz que valga la pena.",
+      "No esperes el momento perfecto, créalo.",
+      "Aprende del pasado, actúa en el presente.",
+      "Cada paso te acerca más a tu meta.",
+      "Eres capaz de más de lo que crees.",
+      "Las grandes cosas toman tiempo.",
+      "Sonríe, aún si el camino es difícil.",
+      "Nadie logra algo grande sin antes fallar.",
+      "Convierte tus heridas en sabiduría.",
+      "Sigue soñando, sigue creyendo.",
+      "Enfócate en lo que puedes controlar.",
+      "No necesitas ser perfecto, solo constante.",
+      "Hoy es una oportunidad, no una obligación.",
+      "Haz lo mejor que puedas con lo que tienes.",
+      "La actitud positiva cambia todo.",
+      "Haz que tu energía sea tu carta de presentación.",
+      "El cambio comienza en ti.",
+      "Sé tu prioridad.",
+      "Vales mucho, nunca lo olvides.",
+      "La paciencia también es una forma de fuerza.",
+      "No te compares, tu camino es único.",
+      "Escucha a tu corazón, él sabe el camino.",
+      "La acción vence al miedo.",
+      "Todo es posible si lo crees y trabajas por ello.",
+      "Acepta lo que no puedes controlar y actúa sobre lo que sí.",
+      "Agradece lo que tienes mientras persigues lo que sueñas.",
+      "El mayor riesgo es no tomar ninguno.",
+      "Donde otros ven caos, tú ve oportunidad.",
+      "Recuerda por qué empezaste.",
+      "Hoy es un nuevo capítulo de tu historia.",
+      "No necesitas hacerlo perfecto, solo empezar.",
+      "El límite solo existe en tu mente.",
+      "Nunca subestimes el poder de un pequeño paso.",
+      "Si no luchas por lo que quieres, no te quejes por lo que pierdes."
+    ];
+
+    const random = Math.floor(Math.random() * frases.length);
+    document.getElementById('quote').textContent = frases[random];
+  </script>
+</body>
+</html>
